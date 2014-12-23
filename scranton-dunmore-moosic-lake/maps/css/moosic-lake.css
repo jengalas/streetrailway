@@ -1,0 +1,32 @@
+html, body { height: 100%; }
+.container { width: 98%; margin: 0 auto; position: relative; }
+.col-md-4 { width: 100%; }
+.fill { height: 100%; height: calc(100% - 52px); }
+
+#legend { position: absolute; top: 10px; left: 100px; }
+
+.filter-red-line {  
+  border-top: 3px solid red; 
+  width: 15px; 
+  height: 7px; 
+  display: inline-block;
+}
+
+.filter-tram { background-image: url(../images/tram.gif); }
+
+#status-checkbox { margin-top: 0; }
+
+#map_canvas { min-height: 100%; } 
+
+#credit {
+  position: absolute; 
+  bottom: -30px; 
+  right: 30px; 
+  background-color: #fff; 
+  padding: 5px; 
+  box-shadow: 0 0 2px #222;
+}
+
+.navbar {margin-bottom: 0;} 
+
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] { position: static; margin-left: 30px; }
