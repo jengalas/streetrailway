@@ -95,6 +95,7 @@ var MapsLib = {
     var tempWhereClause = [];
     if ( $("#cbType1").is(':checked')) tempWhereClause.push("ROW");
 		if ( $("#cbType2").is(':checked')) tempWhereClause.push("image");
+    if ( $("#cbType3").is(':checked')) tempWhereClause.push("postcard");
     whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
     //-------end of custom filters--------
