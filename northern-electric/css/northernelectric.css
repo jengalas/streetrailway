@@ -1,0 +1,35 @@
+html, body { height: 100%; }
+.container { width: 98%; margin: 0 auto; position: relative; }
+.col-md-4 { width: 100%; }
+.fill { height: 100%; }
+
+#legend { position: absolute; top: 10px; left: 100px; }
+
+.filter-box {
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.filter-red-line {
+  border-top: 3px solid red;
+  width: 15px;
+  height: 7px;
+  display: inline-block;
+}
+
+.filter-turquoise { background-color: #99ffff; }
+.filter-lavender { background-color: #ff97ff; }
+
+#status-checkbox { margin-top: 0; }
+
+#map_canvas { min-height: 100%; }
+
+#credit {
+  position: absolute;
+  bottom: -15px;
+  right: 30px;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 0 2px #222;
+}

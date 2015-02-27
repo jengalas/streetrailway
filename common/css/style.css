@@ -1,0 +1,130 @@
+body {
+  color: #9b0714;
+  font-family: Raleway, Georgia, "Times New Roman", Times, serif;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+	margin: 0; 
+}
+
+@media(max-width:767px){ body{font-size: 10px;} }
+@media(min-width:768px){ body{font-size: 14px;} }
+@media(min-width:992px){ body{font-size: 16px;} }
+@media(min-width:1200px){ body{font-size: 16px;} }
+
+
+#background {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  max-width: 700px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  margin-top: 46px;
+  padding: 0;
+}
+
+.content {
+  background: none repeat scroll 0 0 white;
+  margin: 270px auto 0;
+  padding: 0;
+}
+
+.quotation {
+  max-width: 700px; 
+  background-color: rgba(251,244,229,0.5);
+  box-shadow: 0 0 18px 0 rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2), 0 0 0 14px rgba(0,0,0,0.06);
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-size: 2em;  
+  font-style: italic;
+  text-align: center; 
+  padding: 30px; 
+  margin: 0 auto;
+  margin-top: 80px; 
+  border-radius: 4px;    
+}
+
+.attrib {
+  font-size: 75%;
+  margin-top: 8px;
+  color: #444;
+  font-style: italic;
+  text-align: right;
+}
+
+.rw-list {
+  padding: 30px; 
+  background-color: rgba(251,244,229,0.58); 
+  text-align: left; 
+  border-radius: 0; 
+  margin-bottom: 30px;
+}
+
+.btn { white-space: normal; }
+
+/* header {
+  height: auto;
+  left: 50% !important;
+  margin-left: -300px;
+  padding: 0 0 76px;
+  position: absolute;
+  width: 100%;
+}
+
+header .logo {
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+} */
+
+@media only screen and (max-width: 767px) {
+  .menu-trigger {
+      display: block;
+  }
+  #background {
+      display: none;
+  }
+  body {
+      background: none repeat scroll 0 0 rgba(174, 172, 127, 0.7) !important;
+  }
+}
+
+a, a.btn {
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+a:link, a.btn:link, a:visited, a.btn:visited {
+  color: #903;
+}
+
+a:hover, a.btn:hover, a:active, a.btn:active {
+  color: #b53b1b;
+  background-color: rgba(251,244,229,0.7);
+}
+
+/* #slide-panel {
+    width: 300px;
+    float: left;
+    height: 300px;
+    padding: 10px;
+    background: #ccc;
+    margin-left: -300px;
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+}
+#opener {
+    float: right;
+    margin: -10px -40px;
+    border-radius: 0;
+    z-index: 1000;
+} */
+
