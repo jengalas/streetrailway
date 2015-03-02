@@ -250,7 +250,7 @@
             queryStr.push(" LIMIT " + query_opts.limit);
         }
         var theurl = {
-            base: "https://www.googleapis.com/fusiontables/v1/query?sql=",
+            base: "//www.googleapis.com/fusiontables/v1/query?sql=",
             queryStr: queryStr,
             key: self.googleApiKey
         };
