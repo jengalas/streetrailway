@@ -35,8 +35,8 @@
         // map style - can be generated at https://snazzymaps.com/
         this.styles = options.styles || "";
 
-    	this.currentPinpoint = null;
-    	$("#result_count").html("");
+        this.currentPinpoint = null;
+        $("#result_count").html("");
 
         this.myOptions = {
             zoom: this.defaultZoom,
@@ -194,7 +194,7 @@
         });
     };
 
-    /* MapsLib.prototype.addrFromLatLng = function (latLngPoint) {
+    MapsLib.prototype.addrFromLatLng = function (latLngPoint) {
         var self = this;
         self.geocoder.geocode({
             'latLng': latLngPoint
@@ -209,7 +209,7 @@
                 alert("Geocoder failed due to: " + status);
             }
         });
-    }; */
+    };
 
     MapsLib.prototype.drawSearchRadiusCircle = function (point) {
         var self = this;
@@ -250,7 +250,7 @@
             queryStr.push(" LIMIT " + query_opts.limit);
         }
         var theurl = {
-            base: "//www.googleapis.com/fusiontables/v1/query?sql=",
+            base: "https://www.googleapis.com/fusiontables/v1/query?sql=",
             queryStr: queryStr,
             key: self.googleApiKey
         };
@@ -260,12 +260,14 @@
         }).done(function (response) {
             //console.log(response);
             if (callback) callback(response);
+        }).fail(function(response) {
+            self.handleError(response);
         });
     };
 
     MapsLib.prototype.handleError = function (json) {
         if (json.error !== undefined) {
-            var error = json.error.errors;
+            var error = json.responseJSON.error.errors;
             console.log("Error in Fusion Table call!");
             for (var row in error) {
                 console.log(" Domain: " + error[row].domain);
@@ -287,7 +289,7 @@
 
     MapsLib.prototype.displaySearchCount = function (json) {
         var self = this;
-        self.handleError(json);
+
         var numRows = 0;
         if (json["rows"] != null) {
             numRows = json["rows"][0];
