@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   color: #9b0714;
   font-family: Raleway, Georgia, "Times New Roman", Times, serif;
@@ -6,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
-	margin: 0; 
+	margin: 0;
 }
 
 @media(max-width:767px){ body{font-size: 10px;} }
@@ -38,17 +42,17 @@ body {
 }
 
 .quotation {
-  max-width: 700px; 
+  max-width: 700px;
   background-color: rgba(251,244,229,0.5);
   box-shadow: 0 0 18px 0 rgba(0,0,0,0.2), 0 0 4px 0 rgba(0,0,0,0.2), 0 0 0 14px rgba(0,0,0,0.06);
   font-family: Lora, Georgia, "Times New Roman", serif;
-  font-size: 2em;  
+  font-size: 2em;
   font-style: italic;
-  text-align: center; 
-  padding: 30px; 
+  text-align: center;
+  padding: 30px;
   margin: 0 auto;
-  margin-top: 80px; 
-  border-radius: 4px;    
+  margin-top: 80px;
+  border-radius: 4px;
 }
 
 .attrib {
@@ -60,10 +64,10 @@ body {
 }
 
 .rw-list {
-  padding: 30px; 
-  background-color: rgba(251,244,229,0.58); 
-  text-align: left; 
-  border-radius: 0; 
+  padding: 30px;
+  background-color: rgba(251,244,229,0.58);
+  text-align: left;
+  border-radius: 0;
   margin-bottom: 30px;
 }
 
